@@ -17,7 +17,6 @@ public class GestionTache {
 	}
 
 	public static void afficherMenuPrincipal() {
-		sc.nextLine();
 		System.out.println("--------------Menu---------------");
 		String menuPrincipal = "1. Ajouter \n";
 		menuPrincipal += "2. Modifier \n";
@@ -95,7 +94,6 @@ public class GestionTache {
 			}
 
 			t = new Tache(titre, etat,date);
-			
 		}
 
 		if (gestionnaireTache.ajouter(t)) {
